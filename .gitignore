@@ -1,3 +1,8 @@
+.idea/*
+out/*
+*.iml
+
+# Standard Template
 # Compiled source #
 ###################
 *.com

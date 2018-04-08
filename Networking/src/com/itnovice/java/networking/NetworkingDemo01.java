@@ -14,6 +14,10 @@ public class NetworkingDemo01 {
         try {
             localHostIP = InetAddress.getLocalHost();
             localHostName = localHostIP.getHostName();
+            String localIp = InetAddress.getLocalHost().getHostAddress();
+
+            System.out.println("Local IP = " + localIp);
+
         } catch (UnknownHostException e) {
             System.out.println("UnknownHostException: " + e.getMessage());
         }
