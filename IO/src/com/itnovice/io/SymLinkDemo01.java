@@ -6,6 +6,8 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
@@ -40,7 +42,23 @@ public class SymLinkDemo01 {
 
             }
 
+            System.out.println("Current time = " + System.currentTimeMillis());
+
         }, 0, 2, TimeUnit.SECONDS);
+
+
+        Map<String, Double> rates = new HashMap<>();
+        rates.put("FOO||HTTP||HTTP_TCP", 0.25d);
+        rates.put("FOO||DNS||DNS_UDP", 0.28d);
+        rates.put("FOO||HTTPS||SYN_TCP", 0.28d);
+
+        StringBuilder sb = new StringBuilder();
+
+        for (Map.Entry<String, Double> entry : rates.entrySet()) {
+            sb.append(String.format("%s, %f, %d", entry.getKey(), entry.getValue(), System.currentTimeMillis())).append(System.getProperty("line.separator"));
+        }
+        System.out.println(sb.toString());
+
     }
 
 }

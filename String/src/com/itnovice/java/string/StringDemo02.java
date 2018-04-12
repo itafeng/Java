@@ -24,6 +24,13 @@ public class StringDemo02 {
         }
 
         System.out.println(metric);
+
+        StringBuilder sb = new StringBuilder(metric + "1");
+        System.out.println(sb.toString());
+
+        System.out.println(sb.substring(0, sb.length() - 1).toString());
+
+
     }
 
 }
