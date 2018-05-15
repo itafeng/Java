@@ -23,12 +23,6 @@ public class TCPEchoServerExecutor {
         Logger logger = Logger.getLogger("practical");
 
         Executor service = Executors.newCachedThreadPool(); // Dispatch svc
-
-        // Run forever, accepting and spawning a thread for each connection
-        while (true) {
-            Socket clntSock = servSock.accept(); // Block waiting for connection
-            service.execute(new EchoProtocol(clntSock, logger));
-        }
         /* NOT REACHED */
     }
 }
