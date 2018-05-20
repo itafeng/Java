@@ -6,6 +6,7 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
+import TcpSocketCommProto.src.TCPUtils;
 
 public class ThreadDemo19 {
 
@@ -27,8 +28,8 @@ public class ThreadDemo19 {
             while (true) {
 
                 try {
-                    System.out.println("Message from thread_pool_1");
-                    Thread.sleep(2000);
+                    TCPUtils.Log("Message from thread_pool_1");
+                    Thread.sleep(5000);
 
                 } catch (InterruptedException ie) {}
 

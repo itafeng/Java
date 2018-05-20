@@ -111,9 +111,11 @@ public class TCPServer03 {
                     ScheduledFuture<?> timer = senderPool.scheduleAtFixedRate(() -> {
                         try {
 
+                            Socket tmp = socket;
+
                             TCPUtils.Log("Executing sender thread ...");
 
-                            PrintWriter sendBuffer = new PrintWriter(socket.getOutputStream());
+                            PrintWriter sendBuffer = new PrintWriter(tmp.getOutputStream());
 
                             String message = "[Src: Server] - Greeting from server";
                             sendBuffer.println(message);
