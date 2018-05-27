@@ -1,11 +1,9 @@
-package com.itnovice.concurrency;
+package Concurrency.src.com.itnovice.concurrency;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executor;
 import java.util.concurrent.Executors;
 import java.util.stream.IntStream;
-
-import com.itnovice.concurrency.ConcurrentUtils;
 
 public class ThreadDemo7 {
     static int count = 0;

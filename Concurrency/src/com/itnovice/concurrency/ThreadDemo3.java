@@ -1,4 +1,4 @@
-package com.itnovice.concurrency;
+package Concurrency.src.com.itnovice.concurrency;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;

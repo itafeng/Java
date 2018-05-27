@@ -1,5 +1,7 @@
-package com.itnovice.concurrency;
+package Concurrency.src.com.itnovice.concurrency;
 
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.TimeUnit;
 
@@ -16,5 +18,11 @@ public class ConcurrentUtils {
             }
             ex.shutdownNow();
         }
+    }
+
+    public static void Log(String message) {
+        Calendar calendar = Calendar.getInstance();
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("HH:mm:ss");
+        System.out.println(String.format("[%s] %s", simpleDateFormat.format(calendar.getTime()), message));
     }
 }

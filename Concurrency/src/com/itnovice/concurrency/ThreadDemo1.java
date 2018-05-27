@@ -1,4 +1,4 @@
-package com.itnovice.concurrency;
+package Concurrency.src.com.itnovice.concurrency;
 
 public class ThreadDemo1 {
     public static void main(String[] args) {

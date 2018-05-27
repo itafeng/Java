@@ -42,9 +42,14 @@ public class TCPClient01 {
                 }
             }, 0, 2, TimeUnit.SECONDS);
 
-        } catch (ConnectException ce) {
-            TCPUtils.Log("ConnectException caught - 0: " + ce);
+//        } catch (ConnectException ce) {
+//            TCPUtils.Log("ConnectException caught - 0: " + ce);
+
         } catch (IOException io) {
+            if (io instanceof ConnectException) {
+                System.out.println("Connection Refused");
+            }
+
             TCPUtils.Log("IOException caught - 0: " + io);
         }
 

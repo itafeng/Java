@@ -1,3 +1,5 @@
+package TcpSocketCommProto.src;
+
 import com.sun.deploy.util.StringUtils;
 import jdk.nashorn.internal.ir.ContinueNode;
 import sun.rmi.runtime.Log;

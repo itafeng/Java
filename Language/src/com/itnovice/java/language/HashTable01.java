@@ -1,8 +1,5 @@
-package String.src.com.itnovice.java.string;
+package com.itnovice.java.language;
 
-import com.google.common.base.Strings;
-
-import javax.swing.*;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ConcurrentMap;

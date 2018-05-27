@@ -1,4 +1,4 @@
-package com.itnovice.concurrency;
+package Concurrency.src.com.itnovice.concurrency;
 
 import com.google.common.util.concurrent.ThreadFactoryBuilder;
 

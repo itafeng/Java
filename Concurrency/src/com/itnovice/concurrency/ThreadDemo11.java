@@ -1,4 +1,5 @@
-package com.itnovice.concurrency;
+package Concurrency.src.com.itnovice.concurrency;
+
 import java.text.SimpleDateFormat;
 import java.util.Collection;
 import java.util.Date;

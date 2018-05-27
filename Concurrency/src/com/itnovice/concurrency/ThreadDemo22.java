@@ -1,6 +1,5 @@
 package Concurrency.src.com.itnovice.concurrency;
 
-import javax.management.loading.PrivateMLet;
 import java.util.Random;
 import java.util.concurrent.*;
 import java.util.concurrent.atomic.AtomicInteger;
@@ -46,4 +45,5 @@ public class ThreadDemo22 {
 
         }
     }
+
 }

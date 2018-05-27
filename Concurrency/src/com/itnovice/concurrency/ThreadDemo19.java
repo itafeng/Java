@@ -20,7 +20,7 @@ public class ThreadDemo19 {
     public static void main(String[] args) {
 
         ExecutorService outterES = Executors.newSingleThreadExecutor(new ThreadFactoryBuilder()
-//                            .setDaemon(true)
+                            .setDaemon(true)
                             .setUncaughtExceptionHandler(new DefaultExceptionHandler())
                             .build());
 

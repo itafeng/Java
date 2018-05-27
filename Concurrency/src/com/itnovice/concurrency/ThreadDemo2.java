@@ -1,4 +1,4 @@
-package com.itnovice.concurrency;
+package Concurrency.src.com.itnovice.concurrency;
 
 import java.lang.InterruptedException;
 import java.util.concurrent.TimeUnit;
